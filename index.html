@@ -14,7 +14,7 @@
     <div class="patient-info-row">
 
       <div class="patient-photo">
-        <img src="assets/pat1.jfif" alt="Pineapple">
+        <img src="pat1.jfif" alt="Pineapple">
       </div>
 
       <div class="patient-details">
@@ -39,7 +39,7 @@
         </select>
       </div>
       <div class="graph-image">
-        <img src="assets/graph.jpg" alt="graph">
+        <img src="graph.jpg" alt="graph">
       </div>
 
     </div>
@@ -81,7 +81,23 @@
         </a>
       </div>
     </div>
+    <button class="chat-button" onclick="toggleChat()">Chat<br> Now!</button>
+    <div id="chat-window" class="chat-window">
+      <div class="chat-header">
+        <span>Chat with Us!</span>
+        <button onclick="toggleChat()" class="close-chat">&times;</button>
+      </div>
+      <div class="chat-body">
+        <p>Hello! Would you like to make an appointment?</p>
+      </div>
+      <div class="chat-footer">
+        <input type="text" placeholder="Type your message..." disabled />
+        <button disabled>Send</button>
+      </div>
+    </div>
+
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
